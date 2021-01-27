@@ -1,0 +1,374 @@
+Starting Dapr with id myapp. HTTP Port: 3500. gRPC Port: 41435
+INFO[0000] starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] log level set to: info                        app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] metrics server started on :38573/             app_id=myapp instance=golive-surface-laptop scope=dapr.metrics type=log ver=1.0.0-rc.2
+INFO[0000] standalone mode configured                    app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] app id: myapp                                 app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] mTLS is disabled. Skipping certificate request and tls validation  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] local service entry announced: myapp -> 172.20.67.145:34865  app_id=myapp instance=golive-surface-laptop scope=dapr.contrib type=log ver=1.0.0-rc.2
+INFO[0000] Initialized name resolution to standalone     app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] component loaded. name: pubsub, type: pubsub.redis  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] waiting for all outstanding components to be processed  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] component loaded. name: statestore, type: state.redis  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] all outstanding components processed          app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC tracing middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.api type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC metrics middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.api type=log ver=1.0.0-rc.2
+INFO[0000] API gRPC server is running on port 41435      app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] enabled metrics http middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.http type=log ver=1.0.0-rc.2
+INFO[0000] enabled tracing http middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.http type=log ver=1.0.0-rc.2
+INFO[0000] http server is running on port 3500           app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC tracing middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.internal type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC metrics middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.internal type=log ver=1.0.0-rc.2
+INFO[0000] internal gRPC server is running on port 34865  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] application host: 127.0.0.1. application protocol: http. waiting on port 5000.  This will block until the app is listening on that port.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+ℹ️  Updating metadata for app command: dotnet run
+✅  You're up and running! Both Dapr and your app logs will appear here.
+
+== APP == Hosting environment: Development
+
+== APP == Content root path: /home/greg/git/MyActor/MyActorService
+
+== APP == Now listening on: https://localhost:5001
+
+== APP == Now listening on: http://localhost:5000
+
+== APP == Application started. Press Ctrl+C to shut down.
+
+INFO[0002] application discovered on port 5000           app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0002] application configuration loaded              app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0002] actor runtime started. actor idle timeout: 1h0m0s. actor scan interval: 30s  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0002] dapr initialized. Status: Running. Init Elapsed 2165.84ms  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0002] placement tables updated, version: 8          app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor.internal.placement type=log ver=1.0.0-rc.2
+INFO[0004] placement tables updated, version: 9          app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor.internal.placement type=log ver=1.0.0-rc.2
+== APP == Activating actor id: 0
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 1
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 2
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 3
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 4
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 5
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 6
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 7
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 8
+
+== APP == Registering MyFirstReminder...
+
+== APP == Activating actor id: 9
+
+== APP == Registering MyFirstReminder...
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+INFO[0035] Found reminder with key: MyActor||6||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||7||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||3||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||9||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||8||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||2||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||1||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||5||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] Found reminder with key: MyActor||0||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+INFO[0035] Found reminder with key: MyActor||4||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||7||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||0||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||4||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||8||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||9||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||5||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0035] reminder: MyActor||3||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+
+^Cℹ️  
+terminated signal received: shutting down
+✅  Exited Dapr successfully
+✅  Exited App successfully
+
+*********************************
+b7a9104b2010:6379> keys *
+ 1) "MyActor||4||MyFirstReminder"
+ 2) "MyActor||8||MyFirstReminder"
+ 3) "MyActor||6||MyFirstReminder"
+ 4) "myapp||MyActor||8||my_data"
+ 5) "myapp||MyActor||1||my_data"
+ 6) "myapp||MyActor||3||my_data"
+ 7) "myapp||MyActor||7||my_data"
+ 8) "myapp||MyActor||5||my_data"
+ 9) "MyActor||7||MyFirstReminder"
+10) "myapp||MyActor||9||my_data"
+11) "MyActor||5||MyFirstReminder"
+12) "MyActor||2||MyFirstReminder"
+13) "MyActor||3||MyFirstReminder"
+14) "MyActor||9||MyFirstReminder"
+15) "actors||MyActor"
+16) "MyActor||1||MyFirstReminder"
+17) "MyActor||0||MyFirstReminder"
+18) "myapp||MyActor||0||my_data"
+19) "myapp||MyActor||2||my_data"
+20) "myapp||MyActor||6||my_data"
+21) "myapp||MyActor||4||my_data"
+**********************************
+
+Starting Dapr with id myapp. HTTP Port: 3500. gRPC Port: 43605
+INFO[0000] starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] log level set to: info                        app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] metrics server started on :44061/             app_id=myapp instance=golive-surface-laptop scope=dapr.metrics type=log ver=1.0.0-rc.2
+INFO[0000] standalone mode configured                    app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] app id: myapp                                 app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] mTLS is disabled. Skipping certificate request and tls validation  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] local service entry announced: myapp -> 172.20.67.145:34921  app_id=myapp instance=golive-surface-laptop scope=dapr.contrib type=log ver=1.0.0-rc.2
+INFO[0000] Initialized name resolution to standalone     app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] component loaded. name: pubsub, type: pubsub.redis  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] waiting for all outstanding components to be processed  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] component loaded. name: statestore, type: state.redis  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] all outstanding components processed          app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC tracing middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.api type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC metrics middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.api type=log ver=1.0.0-rc.2
+INFO[0000] API gRPC server is running on port 43605      app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] enabled metrics http middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.http type=log ver=1.0.0-rc.2
+INFO[0000] enabled tracing http middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.http type=log ver=1.0.0-rc.2
+INFO[0000] http server is running on port 3500           app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC tracing middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.internal type=log ver=1.0.0-rc.2
+INFO[0000] enabled gRPC metrics middleware               app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.grpc.internal type=log ver=1.0.0-rc.2
+INFO[0000] internal gRPC server is running on port 34921  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0000] application host: 127.0.0.1. application protocol: http. waiting on port 5000.  This will block until the app is listening on that port.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+ℹ️  Updating metadata for app command: dotnet run
+✅  You're up and running! Both Dapr and your app logs will appear here.
+
+== APP == Hosting environment: Development
+
+== APP == Content root path: /home/greg/git/MyActor/MyActorService
+
+== APP == Now listening on: https://localhost:5001
+
+== APP == Now listening on: http://localhost:5000
+
+== APP == Application started. Press Ctrl+C to shut down.
+
+INFO[0002] application discovered on port 5000           app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0002] application configuration loaded              app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0002] actor runtime started. actor idle timeout: 1h0m0s. actor scan interval: 30s  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0002] dapr initialized. Status: Running. Init Elapsed 2052.1891ms  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
+INFO[0002] placement tables updated, version: 10         app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor.internal.placement type=log ver=1.0.0-rc.2
+INFO[0004] placement tables updated, version: 11         app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor.internal.placement type=log ver=1.0.0-rc.2
+== APP == Activating actor id: 1
+
+== APP == Activating actor id: 6
+
+== APP == Activating actor id: 7
+
+== APP == Activating actor id: 3
+
+== APP == Activating actor id: 5
+
+== APP == Activating actor id: 2
+
+== APP == Activating actor id: 8
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == ReceiveReminderAsync for reminder MyFirstReminder is called!
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+== APP == Unregistering MyFirstReminder...
+
+INFO[0019] Found reminder with key: MyActor||7||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] Found reminder with key: MyActor||5||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] Found reminder with key: MyActor||1||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] Found reminder with key: MyActor||2||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] Found reminder with key: MyActor||3||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] Found reminder with key: MyActor||6||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] Found reminder with key: MyActor||8||MyFirstReminder. Deleting reminder  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||2||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||7||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||6||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||8||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||1||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||5||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+INFO[0019] reminder: MyActor||3||MyFirstReminder with parameters: dueTime: 0h0m5s0ms, period: 0h0m5s0ms, data: <nil> has been deleted.  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime.actor type=log ver=1.0.0-rc.2
+^Cℹ️  
+terminated signal received: shutting down
+✅  Exited Dapr successfully
+✅  Exited App successfully
