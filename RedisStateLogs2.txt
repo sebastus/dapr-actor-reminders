@@ -1,3 +1,7 @@
+ greg  golive-surface-laptop/git/MyActor/master $  dapr --version
+CLI version: 1.0.0-rc.3
+Runtime version: 1.0.0-rc.2
+
 Starting Dapr with id myapp. HTTP Port: 3500. gRPC Port: 41435
 INFO[0000] starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d  app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
 INFO[0000] log level set to: info                        app_id=myapp instance=golive-surface-laptop scope=dapr.runtime type=log ver=1.0.0-rc.2
