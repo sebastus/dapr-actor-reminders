@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Dapr.Actors.AspNetCore;
 using Microsoft.AspNetCore;
 
 namespace MyActorService
@@ -14,10 +13,6 @@ namespace MyActorService
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>()
-            .UseActors(options =>
-            {
-                options.Actors.RegisterActor<MyActor>();
-            });
+            .UseStartup<Startup>();
     }
 }

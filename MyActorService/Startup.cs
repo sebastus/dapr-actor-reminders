@@ -15,6 +15,14 @@ namespace MyActorService
 
         public IConfiguration Configuration { get; }
 
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddActors(options =>
+            {
+                options.Actors.RegisterActor<MyActor>();
+            });
+        }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
