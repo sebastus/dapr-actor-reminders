@@ -72,7 +72,7 @@ namespace MyActorService
         /// </summary>
         public async Task RegisterReminder(string ReminderName)
         {
-            Console.WriteLine($"Registering {ReminderName}...");
+            Console.WriteLine($"Registering {ReminderName} for actor id {this.Id}...");
             await this.RegisterReminderAsync(
                 ReminderName,         // The name of the reminder
                 null,                      // User state passed to IRemindable.ReceiveReminderAsync()
@@ -85,7 +85,7 @@ namespace MyActorService
         /// </summary>
         public Task UnregisterReminder(string ReminderName)
         {
-            Console.WriteLine($"Unregistering {ReminderName}...");
+            Console.WriteLine($"Unregistering {ReminderName} for actor id {this.Id}...");
             return this.UnregisterReminderAsync(ReminderName);
         }
 
@@ -94,7 +94,7 @@ namespace MyActorService
         // </summary>
         public async Task ReceiveReminderAsync(string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period)
         {
-            Console.WriteLine($"ReceiveReminderAsync for reminder {reminderName} is called!");
+            //Console.WriteLine($"ReceiveReminderAsync for reminder {reminderName} is called!");
 
             var data = await this.GetDataAsync();
 
