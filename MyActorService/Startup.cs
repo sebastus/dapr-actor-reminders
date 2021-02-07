@@ -35,6 +35,13 @@ namespace MyActorService
                 app.UseHsts();
             }
 
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                // Register actors functionality with routing
+                endpoints.MapActorsHandlers();
+            });
         }
     }
 }
